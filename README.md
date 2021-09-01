@@ -1,11 +1,18 @@
 # Movie_Recommender
 
+Movie Recommending Website:
+ 
+ 
+
 Install
 
 The project requires python and following python libraries installed:
 1.	numpy
 2.	pandas
 3.	matplotlib
+4.	flask
+5.	PyWebIO
+
 The project has been executed using a jupyter notebook.
 
 Data
@@ -17,9 +24,8 @@ There are several csv files in the dataset. The one that are used in this projec
 
 Code
 
-The project uses a simple item based collaborative filtering method to recommend 5 movies to the user based on a movie he/she saw recently. It takes the movie-title and rating of each user for each movie and forms a user-item matrix. 
-The code also analyses some basic features like the average rating given by users, the movies with highest average rating and the movies with highest and lowest view count to get an idea about the dataset.
-Finally, the code calculates Pearson correlation between item(movie) rows and the movies with top 5 correlation values are returned as recommendation.
+The movie recommending model uses KNN algorithm in order to perform Item to Item Collaborative filtering. It takes a movie name as input and then finds ten movies which are closest to that input movie and finally recommends those movies to the user.
+The project uses flask and PyWebIO to build the website and the website is deployed on Heroku.
 
 Result
 

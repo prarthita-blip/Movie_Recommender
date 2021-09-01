@@ -1,8 +1,8 @@
 # Movie_Recommender
 
 Movie Recommending Website:
- 
- 
+
+https://movie-magics.herokuapp.com/
 
 Install
 
@@ -25,6 +25,7 @@ There are several csv files in the dataset. The one that are used in this projec
 Code
 
 The movie recommending model uses KNN algorithm in order to perform Item to Item Collaborative filtering. It takes a movie name as input and then finds ten movies which are closest to that input movie and finally recommends those movies to the user.
+
 The project uses flask and PyWebIO to build the website and the website is deployed on Heroku.
 
 Result
